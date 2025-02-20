@@ -23,25 +23,44 @@
     <header>
 
         <div id="menu-bar" class="fas fa-bars"></div>
-        <img src="C:\Users\ummek\Downloads\vita.jpg" width="80" height="80">
+        <img src="D:\ClassSync Project\mcc_logo.png" width="90" height="90">
 
         <a href="#" class="logo"><span>Class</span>Sync</a>
         <nav class="navbar">
              <a href="#home">home</a>
-             <a href="#menu">menu</a>
+             <a href="#menu">features</a>
              <a href="#about">about</a>
-             <a href="#gallery">gallery</a>
+             <a href="#gallery">timetable</a>
              <a href="feed.html">feedback</a>
              <a href="#contact">contact</a>
-             <a href="#orders">orders</a>
+             
              
         </nav>
 
         <div class="icons">
             <i class="fas fa-search" id="search-btn"></i>
             <i class="fas fa-user" id="login-btn"></i>
-            <i class="fa fa-shopping-cart" id="cart-btn"></i>
+           
+                
+                
+                
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                </div>
+             
+                <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+                
+               
         </div>
+
+        
+          
+
+   
 
         <form action="" class="search-bar-container">
             <input type="search" id="search-bar" placeholder="search here...">
@@ -71,9 +90,9 @@
 
 <section class="home" id="home">
     <div class="content">
-        <b><h3>Revolutionize campus dinning with Vita Meal</h3></b>
-        <p>Bringing the World to Your Plate</p>
-        <a href="#orders" class="btn">Order Now</a>
+        <b><h3>Smart Classroom Allocation Made Simple!</h3></b>
+        <p>Find and book classrooms based on availability, schedule, and location preferences.</p>
+        <a href="#orders" class="btn">Get Started</a>
     </div>
 
     <div class="controls">
@@ -483,13 +502,11 @@
         <div class="box">
             <i class="fas fa-utensils"></i>
                 
-                <p>Welcome to VitaMeal, your ultimate destination for fresh, customizable meals conveniently located within the college campus. 
-                At VitaMeal, we are committed to offering healthier food choices that cater specifically to the needs of students.
-                Whether you're craving a nutritious fruit bowl, hearty oatmeal, vibrant vegetable bowl, or a delicious toast, we have you covered.
-                Our innovative approach ensures that you spend less time waiting and more time enjoying your meal. With our user-friendly website,
-                you can effortlessly place your order from your phone and collect it from our outlet when it's ready. Customize your own bowls with your favorite fruits
-                and vegetables, or indulge in our refreshing custom blend smoothies. Join us at VitaMeal and experience the perfect blend of health, convenience, and deliciousness
-                right here on campus!</p>
+                <p>Welcome to ClassSync, Class Sync is a smart classroom allocation system designed to streamline scheduling in educational institutions. It
+                   automates classroom assignments based on availability, timetables, and user preferences, ensuring efficient space utilization.
+
+                    With real-time updates and seamless timetable integration, students and teachers can easily find and book classrooms, while admins manage 
+                    allocations effortlessly. Say goodbye to scheduling conflicts and experience hassle-free classroom management with Class Sync! 🚀</p>
         </div>
         
     </div>
@@ -729,11 +746,10 @@
 
 <section class="orders" id="orders">
     <h1 class="heading">
+        <span>b</span>
         <span>o</span>
-        <span>r</span>
-        <span>d</span>
-        <span>e</span>
-        <span>r</span>
+        <span>o</span>
+        <span>k</span>
         <span class="space"></span>
         <span>n</span>
         <span>o</span>
@@ -747,25 +763,33 @@
 
         <form action="">
               <div class="inputBox">
-                  <h3>Name</h3>
+                  <h3>Lecturer</h3>
                   <input type="text" placeholder="Enter your name">
               </div>
               <div class="inputBox">
-                <h3>What would you like to order?</h3>
-                <input type="number" placeholder="Enter dish name">
+                <h3>Department</h3>
+                <input type="number" placeholder="Enter department">
             </div>
             <div class="inputBox">
-                <h3>Quantity</h3>
-                <input type="text" placeholder="enter quantity">
+                <h3>Class Strength</h3>
+                <input type="text" placeholder="Enter no of students">
             </div>
 
             <div class="inputBox">
                 <h3>Date</h3>
                 <input type="date">
+
+                <div class="inputBox">
+                <h3>From</h3>
+                <input type="time" placeholder="From">
+
+                <div class="inputBox">
+                    <h3>To</h3>
+                    <input type="time" placeholder="To">
             </div>
             <div class="inputBox">
-                <h3>Address</h3>
-                <input type="text" placeholder="enter your address">
+                <h3>Block/Floor</h3>
+                <input type="text" placeholder="enter block/floor">
             </div>
             
             <input type="submit" class="btn" onclick="clickAlert()" value="book now">
