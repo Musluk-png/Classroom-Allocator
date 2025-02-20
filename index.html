@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassSync </title>
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- custome css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <img src="C:\Users\ummek\Downloads\vita.jpg" width="80" height="80">
+
+        <a href="#" class="logo"><span>Class</span>Sync</a>
+        <nav class="navbar">
+             <a href="#home">home</a>
+             <a href="#menu">menu</a>
+             <a href="#about">about</a>
+             <a href="#gallery">gallery</a>
+             <a href="feed.html">feedback</a>
+             <a href="#contact">contact</a>
+             <a href="#orders">orders</a>
+             
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+            <i class="fa fa-shopping-cart" id="cart-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+<!-- header section ends -->
+
+<!-- login form container -->
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+         <h3>login</h3>
+         <input type="email" class="box" placeholder="enter your email">
+         <input type="password" class="box" placeholder="enter your email">
+         <input type="submit" value="login now" class="btn">
+         <input type="checkbox" id="remember">
+         <label for="remember">Remember me</label>
+         <p>forgrt password? <a href="#">click here</a></p>
+         <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+</div>
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+    <div class="content">
+        <b><h3>Revolutionize campus dinning with Vita Meal</h3></b>
+        <p>Bringing the World to Your Plate</p>
+        <a href="#orders" class="btn">Order Now</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="C:\Users\ummek\Downloads\vida.mp4"></span>
+        <span class="vid-btn" data-src="C:\Users\ummek\Downloads\vidb.mp4"></span>
+        <span class="vid-btn" data-src="C:\Users\ummek\Downloads\vidc.mp4"></span>
+        <span class="vid-btn" data-src="C:\Users\ummek\Downloads\vidd.mp4"></span>
+        <span class="vid-btn" data-src="C:\Users\ummek\Downloads\vide.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="C:\Users\ummek\Downloads\vida.mp4" id="video-slider" loop autoplay></video>
+    </div>
+
+</section>
+
+
+<!-- home section ends -->
+
+
+
+<!-- menu section starts -->
+
+<section class="menu" id="menu">
+    <h1 class="heading">
+        <span>m</span>
+        <span>e</span>
+        <span>n</span>
+        <span>u</span>
+
+    </h1>
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>m</span>
+        <span>o</span>
+        <span>o</span>
+        <span>t</span>
+        <span>h</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f1.jpg"alt="">
+            <div class="content">
+                <h3>  Tropical Paradise </h3>
+                <p>Blend of mango, pineapple, banana, and coconut water</p>
+                 
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                
+                <div class="price"> 80.00<span>120.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f2.jpg" alt="">
+            <div class="content">
+                <h3> Berry Blast</h3>
+                <p>Mix of strawberries, blueberries, raspberries, and almond milk</p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                
+                <div class="price"> 70.00 <span>100.00</span></div>
+                
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f3.jpg" alt="">
+            <div class="content">
+                <h3> Green Goddess </h3>
+                <p>Spinach, kale, banana, apple, and orange juice </p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 120.00 <span>$180.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f4.jpg" alt="">
+            <div class="content">
+                <h3> Banana Nut </h3>
+                <p> Banana, almond butter, almond milk, and a dash of cinnamon </p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 65.00 <span>100.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f5.jpg" alt="">
+            <div class="content">
+                <h3> Mango lassi </h3>
+                <p>Mango, yogurt, honey, and a hint of cardamom</p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 50.00 <span>80.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f6.jpg" alt="">
+            <div class="content">
+                <h3>  Chocolate Peanut Butter </h3>
+                <p>Cocoa powder, peanut butter, banana, and milk</p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 85.00 <span>120.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>w</span>
+        <span>l</span>
+        <span class="space"></span>
+        <span>d</span>
+        <span>i</span>
+        <span>s</span>
+        <span>h</span>
+        <span>e</span>
+        <span>s</span>
+
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f7.jpg"alt="">
+            <div class="content">
+                <h3>  Paneer Tikka Bowl </h3>
+                <p>Grilled paneer (Indian cottage cheese) marinated in tikka spices, served with quinoa, roasted vegetables, and mint yogurt sauce</p>
+                 
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                
+                <div class="price"> 220.00<span>300.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f8.jpg" alt="">
+            <div class="content">
+                <h3> Chana Masala Bowl</h3>
+                <p>Spiced chickpeas (chana masala) served with brown rice, sautéed spinach, and a side of cucumber raita</p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                
+                <div class="price"> 340.00 <span>440.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f9.jpg" alt="">
+            <div class="content">
+                <h3> Palak Paneer Bowl </h3>
+                <p>Creamy spinach (palak paneer) with paneer cubes, served with fragrant basmati rice and papadum</p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 180.00 <span>$220.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f10.jpg" alt="">
+            <div class="content">
+                <h3> Vegetable Biryani Bowl  </h3>
+                <p>  Fragrant basmati rice cooked with mixed vegetables, served with raita and a side of pickle  </p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 265.00 <span>300.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f16.jpg" alt="">
+            <div class="content">
+                <h3>  Coconut Chia Oatmeal  </h3>
+                <p>   Oats cooked with coconut milk, topped with chia seeds and fresh berries  </p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 165.00 <span>200.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+       
+        </div>
+    </div>
+
+    
+    <h1 class="heading">
+        <span>f</span>
+        <span>r</span>
+        <span>u</span>
+        <span>i</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>b</span>
+        <span>o</span>
+        <span>w</span>
+        <span>l</span>
+        <span>s</span>
+
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f11.jpg"alt="">
+            <div class="content">
+                <h3>  Tropical Delight Bowl </h3>
+                <p>Assorted fresh tropical fruits (pineapple, mango, papaya, banana) topped with yogurt and honey </p>
+                 
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                
+                <div class="price"> 180.00<span>190.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f12.jpg" alt="">
+            <div class="content">
+                <h3> Berry Bliss Bowl</h3>
+                <p> Mixed berries (strawberries, blueberries, raspberries) with granola and yogurt</p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                
+                <div class="price"> 175.00 <span>195.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f13.jpg" alt="">
+            <div class="content">
+                <h3> Citrus Sunrise Bowl </h3>
+                <p>Orange segments, kiwi, and grapefruit with a drizzle of agave syrup  </p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 120.00 <span>$180.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f14.jpg" alt="">
+            <div class="content">
+                <h3>  Exotic Fruit Medley  </h3>
+                <p>  Dragon fruit, star fruit, and lychee served with coconut flakes  </p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 65.00 <span>100.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f15.jpg" alt="">
+            <div class="content">
+                <h3> Classic Oatmeal </h3>
+                <p>Rolled oats with milk or almond milk, topped with banana slices and honey</p>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 145.00 <span>180.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <h1 class="heading">
+        <span>e</span>
+        <span>g</span>
+        <span>g</span>
+        <span class="space"></span>
+        <span>s</span>
+        <span>p</span>
+        <span>e</span>
+        <span>a</span>
+        <span>c</span>
+        <span>i</span>
+        <span>a</span>
+        <span>l</span>
+
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f17.jpg"alt="">
+            <div class="content">
+                <h3>  . Omelette </h3>
+                 
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                
+                <div class="price"> 30.00<span>50.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f18.jpg" alt="">
+            <div class="content">
+                <h3> Classic Boiled Egg with Salt and Pepper</h3>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                
+                <div class="price"> 45.00 <span>55.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f19.jpg" alt="">
+            <div class="content">
+                <h3> Chopped Boiled Egg </h3>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 40.00 <span>50.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f20.jpg" alt="">
+            <div class="content">
+                <h3>   Egg Toast  </h3>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 45.00 <span>50.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f21.jpg" alt="">
+            <div class="content">
+                <h3> Bay leaf and organo egg curry </h3>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="price"> 145.00 <span>180.00</span></div>
+                <a href="#orders" class="btn">order now</a>
+            </div>
+        </div>
+
+
+</section>
+
+
+<!-- menu section ends here -->
+<!-- services section starts -->
+
+<section class="about" id="about">
+    <h1 class="heading">
+        <span>a</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>u</span>
+        <span>s</span>
+       
+    </h1>
+
+    <div class="box-container">
+        
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+                
+                <p>Welcome to VitaMeal, your ultimate destination for fresh, customizable meals conveniently located within the college campus. 
+                At VitaMeal, we are committed to offering healthier food choices that cater specifically to the needs of students.
+                Whether you're craving a nutritious fruit bowl, hearty oatmeal, vibrant vegetable bowl, or a delicious toast, we have you covered.
+                Our innovative approach ensures that you spend less time waiting and more time enjoying your meal. With our user-friendly website,
+                you can effortlessly place your order from your phone and collect it from our outlet when it's ready. Customize your own bowls with your favorite fruits
+                and vegetables, or indulge in our refreshing custom blend smoothies. Join us at VitaMeal and experience the perfect blend of health, convenience, and deliciousness
+                right here on campus!</p>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- services section ends -->
+
+<!-- gallery section starts -->
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+
+<div class="box-container">
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f28.jpg" alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>Life's too short to eat bad food.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f29.jpg" alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>Indulge in life's greatest pleasure: food.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f30.jpg" alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>Good food, good mood.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f31.jpg"alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>Tasty food for every mood.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f32.jpg" alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>Food is always a good idea.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f33.jpg" alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>Take a seat, grab a treat.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f34.jpg" alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>It's [food] o'clock.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f35.jpg"alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>Special goodies for you foodies.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="C:\Users\ummek\Downloads\f36.jpg"alt="">
+        <div class="content">
+            <h3>vita meal</h3>
+            <p>From our kitchen to your plate. From your plate to your heart.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section start -->
+
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+        <span>s</span>
+    </h1>
+    <div class="swiper mySwiper review-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="C:\Users\ummek\Downloads\f37.jpg" alt="">
+                    <h3>Mohammed Umar</h3>
+                    <p>“Very good service, good menu … not overly extensive. Food was very good quality all around. 
+                        They know how to prepare 
+                        home fries and their omelets are top-notch. Prices were reasonable.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="C:\Users\ummek\Downloads\f38.jpg" alt="">
+                    <h3>Umme Kulsum</h3>
+                    <p>“I was so impressed with my breakfast this morning! I tried the tropical fruit bowl
+                         and my boyfriend got the chana masala bowl.
+                         We both finished our whole plates and were so impressed with the quality 
+                         of the food and the short amount of time it took to receive it. Our waitress was sweet and helpful. 
+                        I will definitely be back!”</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="C:\Users\ummek\Downloads\f39.jpg" alt="">
+                    <h3>Tahir</h3>
+                    <p>“Great selection! My go to favorite is the vegetable biriyani bowl. We also love their smoothies. 
+                        I just had the egg toast with banana nut smoothie and loved it!”</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="C:\Users\ummek\Downloads\f41.avif" alt="">
+                    <h3>Priya Jain</h3>
+                    <p>“Their brunch is awesome, I love the egg toast and the berry blast smoothie. omelette is really good as well.” </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- review section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="img">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f27.avif" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" onclick="clickSubmit()" value="send message">
+        </form>
+    </div>
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section -->
+
+<section class="brand-container">
+    <div class="swiper mySwiper brand-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide"><img decoding="async" src="img/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="img/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="img/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="img/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="img/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="img/6.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<!-- book section starts -->
+
+<section class="orders" id="orders">
+    <h1 class="heading">
+        <span>o</span>
+        <span>r</span>
+        <span>d</span>
+        <span>e</span>
+        <span>r</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="img">
+            <img decoding="async" src="C:\Users\ummek\Downloads\f22.jpg" alt="">
+        </div>
+
+        <form action="">
+              <div class="inputBox">
+                  <h3>Name</h3>
+                  <input type="text" placeholder="Enter your name">
+              </div>
+              <div class="inputBox">
+                <h3>What would you like to order?</h3>
+                <input type="number" placeholder="Enter dish name">
+            </div>
+            <div class="inputBox">
+                <h3>Quantity</h3>
+                <input type="text" placeholder="enter quantity">
+            </div>
+
+            <div class="inputBox">
+                <h3>Date</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>Address</h3>
+                <input type="text" placeholder="enter your address">
+            </div>
+            
+            <input type="submit" class="btn" onclick="clickAlert()" value="book now">
+        </form>
+    </div>
+</section>
+<!-- book section ends -->
+
+<!-- footer section -->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>  Customize your own bowls with your favorite fruits
+                and vegetables, or indulge in our refreshing custom blend smoothies. Join us at VitaMeal and experience the perfect blend of health, convenience, and deliciousness
+                right here on campus!</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">USA</a>
+            <a href="#">india</a>
+            <a href="#">japan</a>
+            <a href="#">philippines</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">menu</a>
+            <a href="#">about</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+            <a href="#">order</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">likedin</a>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custome js file link -->
+    <script src="main.js"></script>
+</body>
+</html>
