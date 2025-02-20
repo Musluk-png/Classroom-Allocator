@@ -93,3 +93,11 @@ function clickAlert() {
 
     function clickSubmit() {
         alert("Message Sent Successfully!")};
+
+     function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
