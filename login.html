@@ -7,7 +7,7 @@
         <link rel="icon" href="D:\ClassSync Project\login_bg.png" type="image/icon type">
     </head>
 <body>
-    
+
   <div class="container">
       <div class="loginbg">
           <div class="box signin">
@@ -28,40 +28,74 @@
                 <h3><center>Sign In</center></h3>
                 <input type="text" placeholder="Username">
                 <input type="password" placeholder="Password">
-                <a href="home.html">
+                <a href="index.html">
                 <center><input type="button" value="Login"></center>
                 </a>
-               <center><a href="#" class="forgot">Forgot password?</a></center> 
+               <center><a href="index.html"class="forgot">Forgot password?</a></center> 
             </form>
         </div>
         <div class="form signupform">
             <form>
                 <h3><center>Sign up</center></h3>
-                <input type="text" placeholder="Enter Your Name">
-                <input type="text" placeholder="Email">
-                <input type="date" placeholder=" Enter your Date of birth">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm password">
+                <input required type="text" placeholder="Enter Your Name">
+                <input required type="email" placeholder="Email">
+                <input required type="date" placeholder=" Enter your Date of birth">
+                <input required type="password" id="password"placeholder="Password">
+                <input required type="password" id="confirm_password"placeholder="Confirm password">
+                <p id="error_message" style="color: red; font-size: 14px;"></p>
                 <center><input type="submit" value="Sign Up"></center>
             </form>
         </div>
       </div>
       </div>
-<script>
-    const signinbtn = document.querySelector('.signinbtn');
-    const signupbtn = document.querySelector('.signupbtn');
-    const formbx = document.querySelector('.formbx'); 
-    const body = document.querySelector('body')
+      <script>
+        
 
-    signupbtn.onclick = function(){
-        formbx.classList.add('active')
-        body.classList.add('active')
-    }
-    signinbtn.onclick = function(){
-        formbx.classList.remove('active')
-        body.classList.remove('active')
-    }
+        document.addEventListener("DOMContentLoaded", function () {
+            // Sign-in and Sign-up toggle functionality
+            const signinbtn = document.querySelector('.signinbtn');
+            const signupbtn = document.querySelector('.signupbtn');
+            const formbx = document.querySelector('.formbx'); 
+            const body = document.querySelector('body');
+
+            signupbtn.addEventListener("click", function(){
+                formbx.classList.add('active');
+                body.classList.add('active');
+            });
+
+            signinbtn.addEventListener("click", function(){
+                formbx.classList.remove('active');
+                body.classList.remove('active');
+            });
+
+            // Password validation
+            const password = document.getElementById("password");
+            const confirmPassword = document.getElementById("confirm_password");
+            const errorMessage = document.getElementById("error_message");
+
+            if (password && confirmPassword) {
+                confirmPassword.addEventListener("input", function () {
+                    if (confirmPassword.value !== password.value) {
+                        errorMessage.textContent = "Passwords do not match!";
+                        confirmPassword.style.border = "2px solid red";
+                    } else {
+                        errorMessage.textContent = "";
+                        confirmPassword.style.border = "2px solid green";
+                    }
+                });
+
+                document.getElementById("signup_form").addEventListener("submit", function (event) {
+                    if (password.value !== confirmPassword.value) {
+                        event.preventDefault(); // Prevent form submission
+                        errorMessage.textContent = "Passwords do not match!";
+                        confirmPassword.style.border = "2px solid red";
+                    }
+                });
+            }
+        });
+
     </script>
+
       
 </body>
 </html>
