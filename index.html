@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA8oL563knHkOc0uzSsBHlTmAszt79fv5Y",
+  authDomain: "classroom-allocator.firebaseapp.com",
+  databaseURL: "https://classroom-allocator-default-rtdb.firebaseio.com",
+  projectId: "classroom-allocator",
+  storageBucket: "classroom-allocator.firebasestorage.app",
+  messagingSenderId: "1089520912244",
+  appId: "1:1089520912244:web:5056f8d974b3165ba00e21",
+  measurementId: "G-FL5BDQDCGR"
+};
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +50,16 @@
 
         <div id="menu-bar" class="fas fa-bars"></div>
         <img src="D:\ClassSync Project\mcc_logo.png" width="90" height="90">
+        <img src="C:\Users\ummek\Downloads\PHOTO-2025-02-28-10-47-24.jpg" width="90" height="90">
+        
+
 
         <a href="#" class="logo"><span>Class</span>Sync</a>
         <nav class="navbar">
              <a href="#home">home</a>
-             <a href="#menu">features</a>
+             <a href="#menu">blocks</a>
              <a href="#about">about</a>
-             <a href="#gallery">timetable</a>
+             <a href="#gallery">features</a>
              <a href="feed.html">feedback</a>
              <a href="#contact">contact</a>
              
@@ -47,8 +76,8 @@
                 <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                   <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Clients</a>
+                  <a href="#">timetable</a>
+                  <a href="#">book now</a>
                   <a href="#">Contact</a>
                 </div>
              
@@ -96,15 +125,15 @@
     </div>
 
     <div class="controls">
-        <span class="vid-btn active" data-src="C:\Users\ummek\Downloads\vida.mp4"></span>
-        <span class="vid-btn" data-src="C:\Users\ummek\Downloads\vidb.mp4"></span>
-        <span class="vid-btn" data-src="C:\Users\ummek\Downloads\vidc.mp4"></span>
-        <span class="vid-btn" data-src="C:\Users\ummek\Downloads\vidd.mp4"></span>
-        <span class="vid-btn" data-src="C:\Users\ummek\Downloads\vide.mp4"></span>
+        <span class="vid-btn active" data-src="D:\ClassSync Project\WhatsApp Video 2025-02-20 at 21.03.23_3f4bdb80.mp4"></span>
+        <span class="vid-btn" data-src="D:\ClassSync Project\WhatsApp Video 2025-02-21 at 13.28.42_ba171b8b.mp4"></span>
+        <span class="vid-btn" data-src="C:\Users\ummek\OneDrive\Pictures\Project\VID-20250301-WA0001.mp4"></span>
+        <span class="vid-btn" data-src="C:\Users\ummek\OneDrive\Pictures\Project\VID-20250301-WA0005.mp4"></span>
+        <span class="vid-btn" data-src="C:\Users\ummek\OneDrive\Pictures\Project\VID-20250301-WA0003.mp4"></span>
     </div>
 
     <div class="video-container">
-        <video src="C:\Users\ummek\Downloads\vida.mp4" id="video-slider" loop autoplay></video>
+        <video src="D:\ClassSync Project\WhatsApp Video 2025-02-20 at 21.03.23_3f4bdb80.mp4" id="video-slider" loop autoplay></video>
     </div>
 
 </section>
@@ -117,365 +146,112 @@
 <!-- menu section starts -->
 
 <section class="menu" id="menu">
-    <h1 class="heading">
-        <span>m</span>
-        <span>e</span>
-        <span>n</span>
-        <span>u</span>
-
-    </h1>
+   
 
     <h1 class="heading">
-        <span>s</span>
-        <span>m</span>
-        <span>o</span>
-        <span>o</span>
-        <span>t</span>
-        <span>h</span>
-        <span>i</span>
-        <span>e</span>
-        <span>s</span>
-
-    </h1>
-
-    <div class="box-container">
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f1.jpg"alt="">
-            <div class="content">
-                <h3>  Tropical Paradise </h3>
-                <p>Blend of mango, pineapple, banana, and coconut water</p>
-                 
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                
-                <div class="price"> 80.00<span>120.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f2.jpg" alt="">
-            <div class="content">
-                <h3> Berry Blast</h3>
-                <p>Mix of strawberries, blueberries, raspberries, and almond milk</p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                
-                <div class="price"> 70.00 <span>100.00</span></div>
-                
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f3.jpg" alt="">
-            <div class="content">
-                <h3> Green Goddess </h3>
-                <p>Spinach, kale, banana, apple, and orange juice </p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 120.00 <span>$180.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f4.jpg" alt="">
-            <div class="content">
-                <h3> Banana Nut </h3>
-                <p> Banana, almond butter, almond milk, and a dash of cinnamon </p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 65.00 <span>100.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f5.jpg" alt="">
-            <div class="content">
-                <h3> Mango lassi </h3>
-                <p>Mango, yogurt, honey, and a hint of cardamom</p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 50.00 <span>80.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f6.jpg" alt="">
-            <div class="content">
-                <h3>  Chocolate Peanut Butter </h3>
-                <p>Cocoa powder, peanut butter, banana, and milk</p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 85.00 <span>120.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-    </div>
-
-    <h1 class="heading">
-        <span>b</span>
-        <span>o</span>
-        <span>w</span>
+        <span>B</span>
         <span>l</span>
-        <span class="space"></span>
-        <span>d</span>
-        <span>i</span>
+        <span>o</span>
+        <span>c</span>
+        <span>k</span>
         <span>s</span>
-        <span>h</span>
-        <span>e</span>
-        <span>s</span>
+       
 
     </h1>
+
     <div class="box-container">
         <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f7.jpg"alt="">
+            <img decoding="async" src="C:\Users\ummek\Downloads\IMG_1190.JPG"alt="">
             <div class="content">
-                <h3>  Paneer Tikka Bowl </h3>
-                <p>Grilled paneer (Indian cottage cheese) marinated in tikka spices, served with quinoa, roasted vegetables, and mint yogurt sauce</p>
-                 
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                <h3>  LSCB Block </h3>
+                <p>Block Incharge: Amit Rao </p>
+                <p>Amenities: WiFi, AC, Smart Boards, Projectors, Elevators. </p>
+                <p>Accessibility Features: Ramps, lifts, braille signages. </p>
+                <p>Total Classrooms: 82</p>
+                <p>Labs: Physics, Computer</p>
                 
-                <div class="price"> 220.00<span>300.00</span></div>
-                <a href="#orders" class="btn">order now</a>
+                <a href="D:\ClassSync Project\Classroom Booking\seat.html" class="btn">view classrooms</a>
             </div>
         </div>
 
         <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f8.jpg" alt="">
+            <img decoding="async" src="C:\Users\ummek\Downloads\IMG_1196.JPG" alt="">
             <div class="content">
-                <h3> Chana Masala Bowl</h3>
-                <p>Spiced chickpeas (chana masala) served with brown rice, sautéed spinach, and a side of cucumber raita</p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                <h3> Golden Jubliee Block (GJB)</h3>
+                <p>Block Incharge: Daisy Sen </p>
+                <p>Amenities: WiFi, AC, Smart Boards, Projectors, Elevators. </p>
+                <p>Accessibility Features: Ramps, lifts, braille signages. </p>
+                <p>Total Classrooms: 82</p>
+                <p>Labs: Physics</p>
                 
-                <div class="price"> 340.00 <span>440.00</span></div>
-                <a href="#orders" class="btn">order now</a>
+                <a href="#orders" class="btn">view classrooms</a>
             </div>
         </div>
 
         <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f9.jpg" alt="">
+            <img decoding="async" src="C:\Users\ummek\Downloads\IMG_1198.JPG" alt="">
             <div class="content">
-                <h3> Palak Paneer Bowl </h3>
-                <p>Creamy spinach (palak paneer) with paneer cubes, served with fragrant basmati rice and papadum</p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 180.00 <span>$220.00</span></div>
-                <a href="#orders" class="btn">order now</a>
+                <h3> Mother of Carmel Block (MOC) </h3>
+                <p>Block Incharge: Poornima </p>
+                <p>Amenities: WiFi, AC, Smart Boards, Projectors, Elevators. </p>
+                <p>Accessibility Features: Ramps, lifts, braille signages. </p>
+                <p>Total Classrooms: 52</p>
+                <p>Labs: Physics, Computer</p>
+                <a href="#orders" class="btn">view classrooms</a>
             </div>
         </div>
 
         <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f10.jpg" alt="">
+            <img decoding="async" src="D:\ClassSync Project\login_bg.png"alt="">
             <div class="content">
-                <h3> Vegetable Biryani Bowl  </h3>
-                <p>  Fragrant basmati rice cooked with mixed vegetables, served with raita and a side of pickle  </p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 265.00 <span>300.00</span></div>
-                <a href="#orders" class="btn">order now</a>
+                <h3> Diamond Jubliee Block (DJB)  </h3>
+                <p>Block Incharge: Peter S</p>
+                <p>Amenities: WiFi, AC, Smart Boards, Projectors, Elevators. </p>
+                <p>Accessibility Features: Ramps, lifts, braille signages. </p>
+                <p>Total Classrooms: 22</p>
+                <p>Labs: Physics, Computer</p>
+                <a href="#orders" class="btn">view classrooms</a>
             </div>
         </div>
 
         <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f16.jpg" alt="">
+            <img decoding="async" src="D:\ClassSync Project\Classroom Booking\download (1).jpg"alt="">
             <div class="content">
-                <h3>  Coconut Chia Oatmeal  </h3>
-                <p>   Oats cooked with coconut milk, topped with chia seeds and fresh berries  </p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 165.00 <span>200.00</span></div>
-                <a href="#orders" class="btn">order now</a>
+                <h3> Admin Block</h3>
+                <p>Block Incharge: Reshma Shah </p>
+                <p>Amenities: WiFi, AC, Smart Boards, Projectors, Elevators. </p>
+                <p>Accessibility Features: Ramps, lifts, braille signages. </p>
+                <p>Total Classrooms: 46</p>
+                <p>Labs: Physics, Computer, Biology</p>
+                <a href="#orders" class="btn">view classrooms</a>
             </div>
         </div>
 
-       
+        <div class="box">
+            <img decoding="async" src="D:\ClassSync Project\Classroom Booking\WhatsApp Image 2025-03-02 at 12.44.13_d48eaee0.jpg" alt="">
+            <div class="content">
+                <h3>  Mother Teresa Block (MTB)</h3>
+                <p>Block Incharge: Sneha Pandey </p>
+                <p>Amenities:  WiFi, AC, Smart Boards, Projectors, Elevators. </p>
+                <p>Accessibility Features: lifts, Ramps, braille signages. </p>
+                <p>Total Classrooms: 40</p>
+                <p>Labs: Computer</p>
+                <a href="#orders" class="btn">view classrooms</a>
+            </div>
         </div>
     </div>
 
     
-    <h1 class="heading">
-        <span>f</span>
-        <span>r</span>
-        <span>u</span>
-        <span>i</span>
-        <span>t</span>
-        <span class="space"></span>
-        <span>b</span>
-        <span>o</span>
-        <span>w</span>
-        <span>l</span>
-        <span>s</span>
+    
 
-    </h1>
+   
 
-    <div class="box-container">
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f11.jpg"alt="">
-            <div class="content">
-                <h3>  Tropical Delight Bowl </h3>
-                <p>Assorted fresh tropical fruits (pineapple, mango, papaya, banana) topped with yogurt and honey </p>
-                 
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                
-                <div class="price"> 180.00<span>190.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
+     
 
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f12.jpg" alt="">
-            <div class="content">
-                <h3> Berry Bliss Bowl</h3>
-                <p> Mixed berries (strawberries, blueberries, raspberries) with granola and yogurt</p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                
-                <div class="price"> 175.00 <span>195.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
 
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f13.jpg" alt="">
-            <div class="content">
-                <h3> Citrus Sunrise Bowl </h3>
-                <p>Orange segments, kiwi, and grapefruit with a drizzle of agave syrup  </p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 120.00 <span>$180.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
+        
 
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f14.jpg" alt="">
-            <div class="content">
-                <h3>  Exotic Fruit Medley  </h3>
-                <p>  Dragon fruit, star fruit, and lychee served with coconut flakes  </p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 65.00 <span>100.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f15.jpg" alt="">
-            <div class="content">
-                <h3> Classic Oatmeal </h3>
-                <p>Rolled oats with milk or almond milk, topped with banana slices and honey</p>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 145.00 <span>180.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-       
-    </div>
-
-    <h1 class="heading">
-        <span>e</span>
-        <span>g</span>
-        <span>g</span>
-        <span class="space"></span>
-        <span>s</span>
-        <span>p</span>
-        <span>e</span>
-        <span>a</span>
-        <span>c</span>
-        <span>i</span>
-        <span>a</span>
-        <span>l</span>
-
-    </h1>
-
-    <div class="box-container">
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f17.jpg"alt="">
-            <div class="content">
-                <h3>  . Omelette </h3>
-                 
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                
-                <div class="price"> 30.00<span>50.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f18.jpg" alt="">
-            <div class="content">
-                <h3> Classic Boiled Egg with Salt and Pepper</h3>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                
-                <div class="price"> 45.00 <span>55.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f19.jpg" alt="">
-            <div class="content">
-                <h3> Chopped Boiled Egg </h3>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 40.00 <span>50.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f20.jpg" alt="">
-            <div class="content">
-                <h3>   Egg Toast  </h3>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 45.00 <span>50.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f21.jpg" alt="">
-            <div class="content">
-                <h3> Bay leaf and organo egg curry </h3>
-                <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="price"> 145.00 <span>180.00</span></div>
-                <a href="#orders" class="btn">order now</a>
-            </div>
-        </div>
+      
 
 
 </section>
@@ -500,7 +276,8 @@
     <div class="box-container">
         
         <div class="box">
-            <i class="fas fa-utensils"></i>
+            <i class="fas fa-users"></i>
+
                 
                 <p>Welcome to ClassSync, Class Sync is a smart classroom allocation system designed to streamline scheduling in educational institutions. It
                    automates classroom assignments based on availability, timetables, and user preferences, ensuring efficient space utilization.
@@ -519,89 +296,67 @@
 
 <section class="gallery" id="gallery">
     <h1 class="heading">
-        <span>g</span>
-        <span>a</span>
-        <span>l</span>
-        <span>l</span>
+        <span>f</span>
         <span>e</span>
+        <span>a</span>
+        <span>t</span>
+        <span>u</span>
         <span>r</span>
-        <span>y</span>
+        <span>e</span>
+        <span>s</span>
     </h1>
 
 
 <div class="box-container">
     <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f28.jpg" alt="">
+        <img decoding="async" src="D:\ClassSync Project\Classroom Booking\9dbeac21-3e1e-4264-8b30-eceee8f0bbbe.webp"alt="">
         <div class="content">
-            <h3>vita meal</h3>
-            <p>Life's too short to eat bad food.</p>
+            <h3>Faculty & Room Assignments</h3>
+            <p>"Smart scheduling for smarter teaching"</p>
+            <a href="D:\ClassSync Project\Classroom Booking\faculty.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="D:\ClassSync Project\Classroom Booking\e51d274e-f5dd-43c7-b060-3c5983bcd96f.webp"alt="">
+        <div class="content">
+            <h3>Timetable</h3>
+            <p>"Plan ahead, stay ahead – your schedule at a glance!"</p>
+            <a href="D:\ClassSync Project\Department of Computer Science UG(BCA, BSc, Data _241121_122735.pdf"class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="D:\ClassSync Project\Classroom Booking\9d5ace0d-b64d-4e8d-badc-e91305051931.webp" alt="">
+        <div class="content">
+            <h3>Campus map</h3>
+            <p>"Navigate your campus with ease – find your way in a glance!"</p>
             <a href="#" class="btn">see more</a>
         </div>
     </div>
     <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f29.jpg" alt="">
+        <img decoding="async" src="D:\ClassSync Project\Classroom Booking\426e2a04-bba7-4b8a-a950-b2c6cd7751d3.webp"alt="">
         <div class="content">
-            <h3>vita meal</h3>
-            <p>Indulge in life's greatest pleasure: food.</p>
+            <h3>Report Issue</h3>
+            <p>"Spot it, report it, fix it!" </p>
+            <a href="D:\ClassSync Project\Classroom Booking\report.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="D:\ClassSync Project\Classroom Booking\dba57d56-d66b-4c75-86d3-216c89c41cbb.webp" alt="">
+        <div class="content">
+            <h3>Classroom Availability</h3>
+            <p>"Find the perfect classroom, anytime, anywhere!"</p>
             <a href="#" class="btn">see more</a>
         </div>
     </div>
     <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f30.jpg" alt="">
+        <img decoding="async" src="D:\ClassSync Project\Classroom Booking\7c79cfc3-60a5-4e9d-bf2b-c7425484a496.webp"alt="">
         <div class="content">
-            <h3>vita meal</h3>
-            <p>Good food, good mood.</p>
+            <h3>Faculty Schedulel</h3>
+            <p>"Stay on track with faculty schedules at a glance!"</p>
             <a href="#" class="btn">see more</a>
         </div>
     </div>
-    <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f31.jpg"alt="">
-        <div class="content">
-            <h3>vita meal</h3>
-            <p>Tasty food for every mood.</p>
-            <a href="#" class="btn">see more</a>
-        </div>
-    </div>
-    <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f32.jpg" alt="">
-        <div class="content">
-            <h3>vita meal</h3>
-            <p>Food is always a good idea.</p>
-            <a href="#" class="btn">see more</a>
-        </div>
-    </div>
-    <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f33.jpg" alt="">
-        <div class="content">
-            <h3>vita meal</h3>
-            <p>Take a seat, grab a treat.</p>
-            <a href="#" class="btn">see more</a>
-        </div>
-    </div>
-    <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f34.jpg" alt="">
-        <div class="content">
-            <h3>vita meal</h3>
-            <p>It's [food] o'clock.</p>
-            <a href="#" class="btn">see more</a>
-        </div>
-    </div>
-    <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f35.jpg"alt="">
-        <div class="content">
-            <h3>vita meal</h3>
-            <p>Special goodies for you foodies.</p>
-            <a href="#" class="btn">see more</a>
-        </div>
-    </div>
-    <div class="box">
-        <img decoding="async" src="C:\Users\ummek\Downloads\f36.jpg"alt="">
-        <div class="content">
-            <h3>vita meal</h3>
-            <p>From our kitchen to your plate. From your plate to your heart.</p>
-            <a href="#" class="btn">see more</a>
-        </div>
-    </div>
+   
 </div>
 </section>
 
@@ -623,11 +378,11 @@
         <div class="swiper-wrapper wrapper">
             <div class="swiper-slide">
                 <div class="box">
-                    <img decoding="async" src="C:\Users\ummek\Downloads\f37.jpg" alt="">
-                    <h3>Mohammed Umar</h3>
-                    <p>“Very good service, good menu … not overly extensive. Food was very good quality all around. 
-                        They know how to prepare 
-                        home fries and their omelets are top-notch. Prices were reasonable.</p>
+                    <img decoding="async" src="C:\Users\ummek\OneDrive\Pictures\Project\close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg"alt="">
+                    <h3> "Super Convenient!"</h3>
+                    <p> – Amit Sharma, Student</p>
+                    <p>"This system has made classroom allocation so much easier! No more running around searching for an empty room.
+                         The interface is user-friendly, and the real-time updates are a game-changer!"</p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -640,13 +395,11 @@
 
             <div class="swiper-slide">
                 <div class="box">
-                    <img decoding="async" src="C:\Users\ummek\Downloads\f38.jpg" alt="">
-                    <h3>Umme Kulsum</h3>
-                    <p>“I was so impressed with my breakfast this morning! I tried the tropical fruit bowl
-                         and my boyfriend got the chana masala bowl.
-                         We both finished our whole plates and were so impressed with the quality 
-                         of the food and the short amount of time it took to receive it. Our waitress was sweet and helpful. 
-                        I will definitely be back!”</p>
+                    <img decoding="async" src="C:\Users\ummek\OneDrive\Pictures\Project\images.jpg" alt="">
+                    <h3>"Perfect for Administrators"</h3>
+                    <p>– Priya Verma, Admin</p>
+                    <p>"Managing classroom schedules used to be a nightmare, but this website has streamlined everything.
+                         Now, we can allocate rooms efficiently without conflicts. Highly recommended!"</p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -659,10 +412,28 @@
 
             <div class="swiper-slide">
                 <div class="box">
-                    <img decoding="async" src="C:\Users\ummek\Downloads\f39.jpg" alt="">
-                    <h3>Tahir</h3>
-                    <p>“Great selection! My go to favorite is the vegetable biriyani bowl. We also love their smoothies. 
-                        I just had the egg toast with banana nut smoothie and loved it!”</p>
+                    <img decoding="async" src="C:\Users\ummek\OneDrive\Pictures\Project\how-much-could-a-masters-degree-increase-your-teaching-salary.png" alt="">
+                    <h3>"Very Helpful!"</h3>
+                    <p> – Rahul Mehta, Teacher</p>
+                    <p>"Finding an available classroom has never been this simple. I love how I can check room availability instantly.
+                         Just wish there was a mobile app version!"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img decoding="async" src="C:\Users\ummek\OneDrive\Pictures\Project\The-English-Teacher-FX-Brian-Jordan-Alvarez.webp" alt="">
+                    <h3>"Great But Needs More Features"</h3>
+                    <p>  – Arjun Nair, Faculty</p>
+                    <p>"The system works well and is super useful. It would be even better if it had 
+                        automated notifications for schedule changes!"</p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -676,8 +447,10 @@
             <div class="swiper-slide">
                 <div class="box">
                     <img decoding="async" src="C:\Users\ummek\Downloads\f41.avif" alt="">
-                    <h3>Priya Jain</h3>
-                    <p>“Their brunch is awesome, I love the egg toast and the berry blast smoothie. omelette is really good as well.” </p>
+                    <h3>"Saves So Much Time"</h3>
+                    <p>– Sneha Kapoor, Student</p>
+                    <p>"Before this system, we had to manually check notice boards for room allocations.
+                         Now, we can just check online and plan ahead. Amazing work!"</p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -708,7 +481,7 @@
     </h1>
     <div class="row">
         <div class="img">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f27.avif" alt="">
+            <img decoding="async" src="D:\ClassSync Project\Classroom Booking\288e593b-3a1e-4772-83f9-cf63018e8f32.webp" alt="">
         </div>
         <form action="">
             <div class="inputBox">
@@ -758,7 +531,7 @@
 
     <div class="row">
         <div class="img">
-            <img decoding="async" src="C:\Users\ummek\Downloads\f22.jpg" alt="">
+            <img decoding="async" src="D:\ClassSync Project\bf22ba2f-6908-42c9-a12e-291230e18fc8.jpg"alt="">
         </div>
 
         <form action="">
@@ -778,21 +551,19 @@
             <div class="inputBox">
                 <h3>Date</h3>
                 <input type="date">
+            
 
                 <div class="inputBox">
-                <h3>From</h3>
+                <h3>Time</h3>
                 <input type="time" placeholder="From">
 
-                <div class="inputBox">
-                    <h3>To</h3>
-                    <input type="time" placeholder="To">
             </div>
             <div class="inputBox">
                 <h3>Block/Floor</h3>
                 <input type="text" placeholder="enter block/floor">
             </div>
 
-            div class="inputBox">
+           <div class="inputBox">
                 <h3>Classroom</h3>
                 <input type="varchar" placeholder="Enter classroom no">
             </div>
@@ -809,9 +580,8 @@
     <div class="box-container">
         <div class="box">
             <h3>about us</h3>
-            <p>  Customize your own bowls with your favorite fruits
-                and vegetables, or indulge in our refreshing custom blend smoothies. Join us at VitaMeal and experience the perfect blend of health, convenience, and deliciousness
-                right here on campus!</p>
+            <p>  Our website simplifies classroom allocation by providing a seamless booking system for students, teachers, and administrators. With real-time availability tracking, scheduling, and faculty-room assignments, we ensure efficient space management. Whether you need to check classroom availability, 
+                book a room, or view timetables, our platform makes the process quick and hassle-free.</p>
         </div>
         <div class="box">
             <h3>branch locations</h3>
@@ -824,12 +594,12 @@
         <div class="box">
             <h3>quick links</h3>
             <a href="#">home</a>
-            <a href="#">menu</a>
+            <a href="#">blocks</a>
             <a href="#">about</a>
-            <a href="#">gallery</a>
+            <a href="#">features</a>
             <a href="#">review</a>
             <a href="#">contact</a>
-            <a href="#">order</a>
+            <a href="#">book now</a>
         </div>
         <div class="box">
             <h3>follow us</h3>
